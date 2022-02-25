@@ -17,9 +17,7 @@ export class ProductListComponent {
 
   share() {
     // window.alert('The product has been shared!');
-    this.toast.success('The product has been shared!', undefined, {
-      progressBar: true, positionClass: 'toast-bottom-center'
-    });
+    this.toast.success('The product has been shared!');
   }
 }
 

@@ -18,7 +18,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       { path: '', component: ProductListComponent },
     ]),
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot({ progressBar: true, positionClass: 'toast-bottom-center' })
   ],
   declarations: [
     AppComponent,
