@@ -19,6 +19,10 @@ export class ProductListComponent {
     // window.alert('The product has been shared!');
     this.toast.success('The product has been shared!');
   }
+
+  onNotify() {
+    this.toast.info('You will be notified when the product goes on sale');
+  }
 }
 
 

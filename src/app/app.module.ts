@@ -9,6 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductsAlertsComponent } from './products-alerts/products-alerts.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ProductListComponent } from './product-list/product-list.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductsAlertsComponent
   ],
   bootstrap: [
     AppComponent
