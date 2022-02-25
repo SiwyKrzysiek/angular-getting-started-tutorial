@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 import { products } from '../products';
 
@@ -10,8 +11,15 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
+  constructor(private toast: ToastrService) {
+
+  }
+
   share() {
-    window.alert('The product has been shared!');
+    // window.alert('The product has been shared!');
+    this.toast.success('The product has been shared!', undefined, {
+      progressBar: true, positionClass: 'toast-bottom-center'
+    });
   }
 }
 
